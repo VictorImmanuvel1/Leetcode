@@ -5,6 +5,5 @@ class Solution(object):
         :type letter: str
         :rtype: int
         """
-        a=s.count(letter)*100/len(s)
-        return a
+        return (s.count(letter)*100/len(s))
         
