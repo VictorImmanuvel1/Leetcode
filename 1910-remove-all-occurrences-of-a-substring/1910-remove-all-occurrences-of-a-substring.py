@@ -6,5 +6,6 @@ class Solution(object):
         :rtype: str
         """
         while part in s:
-            s= s.replace(part,"",1)
+            index = s.index(part)
+            s = s[:index] + s[index+len(part):]
         return s
