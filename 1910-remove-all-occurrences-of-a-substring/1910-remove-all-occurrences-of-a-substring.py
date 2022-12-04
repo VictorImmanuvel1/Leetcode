@@ -5,12 +5,6 @@ class Solution(object):
         :type part: str
         :rtype: str
         """
-        if s=="aabababa":
-            return "ba"
-        if s=="aababababa":
-            return "b"
-
-        while(s.count(part)!=0):
-            s="".join(s.split(part))
+        while part in s:
+            s= s.replace(part,"",1)
         return s
-        
