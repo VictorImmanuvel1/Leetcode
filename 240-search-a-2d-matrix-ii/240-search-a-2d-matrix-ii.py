@@ -1,5 +1,10 @@
-class Solution:
-    def searchMatrix(self, matrix: List[List[int]], target: int) -> bool:
+class Solution(object):
+    def searchMatrix(self, matrix, target):
+        """
+        :type matrix: List[List[int]]
+        :type target: int
+        :rtype: bool
+        """
         c=0
         for i in matrix:
             for j in i:
@@ -8,4 +13,5 @@ class Solution:
                     break
         if(c>0):
             return True
-        return False        
+        return False     
+        
